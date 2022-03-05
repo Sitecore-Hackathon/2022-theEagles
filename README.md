@@ -25,7 +25,7 @@ You can find a very good reference to Github flavoured markdown reference in [th
 
 ## Video link
 
-⟹ [https://youtu.be/S-SqRupxbPE](#video-link)
+⟹ [Sitecore Hackathon 2022 theEagles CLI Extension](https://youtu.be/S-SqRupxbPE)
 
 ## Pre-requisites and Dependencies
 
