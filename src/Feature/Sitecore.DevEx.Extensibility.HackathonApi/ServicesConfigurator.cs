@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Sitecore.DependencyInjection;
 using Sitecore.DevEx.Extensibility.HackathonApi.Controllers;
+using Sitecore.DevEx.Extensibility.HackathonApi.Services;
 
 namespace Sitecore.DevEx.Extensibility.HackathonApi
 {
@@ -19,7 +20,7 @@ namespace Sitecore.DevEx.Extensibility.HackathonApi
                 typeof(HackathonController)));
             
             // Services
-            //serviceCollection.AddTransient<IService,  Service>();
+            serviceCollection.AddTransient<IHackathonApiService, HackathonApiService>();
             
             
             ConfigureCacheCleaners(serviceCollection);

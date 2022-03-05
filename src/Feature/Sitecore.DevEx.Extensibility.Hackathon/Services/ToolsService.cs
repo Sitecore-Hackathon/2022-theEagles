@@ -44,19 +44,19 @@ namespace Sitecore.DevEx.Extensibility.Hackathon.Services
 
             //call to the appi
              string api = Consts.apiPath + "/clearcache";
-            _logger.LogConsoleInformation("Processing...", ConsoleColor.Yellow);
+            _logger.LogConsoleInformation($"Processing...{api}", ConsoleColor.Yellow);
             _logger.LogTrace( "requesting clearing cache");
 
             var client = GetHttpClient(configuration);
             try
             {
                 var response = await configuration
-                    .MakeAuthenticatedRequest(client, _ => client.PostAsync(Consts.apiPath, null))
+                    .MakeAuthenticatedRequest(client, _ => client.PostAsync(api, null))
                     .ConfigureAwait(false);
 
                 var resultJson = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-
-                return JsonConvert.DeserializeObject<HackathonResultModel>(resultJson);
+                // return resultJson;
+               return JsonConvert.DeserializeObject<HackathonResultModel>(resultJson);
             }
             catch (Exception e)
             {

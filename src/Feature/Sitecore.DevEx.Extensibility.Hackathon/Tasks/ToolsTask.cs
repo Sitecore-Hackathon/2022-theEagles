@@ -3,6 +3,7 @@
 using Microsoft.Extensions.Logging;
 using Sitecore.DevEx.Client.Logging;
 using Sitecore.DevEx.Configuration.Models;
+using Sitecore.DevEx.Extensibility.Hackathon.Models;
 using Sitecore.DevEx.Extensibility.Hackathon.Services;
 using Sitecore.DevEx.Logging;
 using System;
@@ -42,11 +43,11 @@ namespace Sitecore.DevEx.Extensibility.Hackathon.Tasks
             if (result == null)
                 return;
 
-            PrintLogs(result.OperationResults);
+           PrintLogs(result.OperationResults);
 
-            if (result.Successful)
+           if (result.Successful)
             {
-                ColorLogExtensions.LogConsoleInformation(_logger, "Successful" , new ConsoleColor?(ConsoleColor.Green), new ConsoleColor?());
+                ColorLogExtensions.LogConsoleInformation(_logger, "", new ConsoleColor?(ConsoleColor.Green), new ConsoleColor?());
             }
 
             stopwatch = (Stopwatch)null;

@@ -7,8 +7,8 @@ namespace Sitecore.DevEx.Extensibility.HackathonApi.Models
     public class HackathonResultModel
     {
 
-            public bool Successful { get; set; } 
-            public IEnumerable<OperationResult> OperationResults { get; set; } = new List<OperationResult>();
+        public bool Successful { get; set; } = true;
+        public IEnumerable<OperationResult> OperationResults { get; set; } = new List<OperationResult>();
 
     }
 }

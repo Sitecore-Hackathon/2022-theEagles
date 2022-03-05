@@ -16,11 +16,14 @@ namespace Sitecore.DevEx.Extensibility.HackathonApi.Controllers
         {
             _apiService = apiService;
         }
+        public HackathonController( )
+        {
+            
+        }
 
- 
 
         [HttpPost]
-        //[Route("all")]
+        [Route("clearcache")]
         public IHttpActionResult ClearCache()
         {
             var result = _apiService.ClearCache();

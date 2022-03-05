@@ -32,11 +32,7 @@ namespace Sitecore.DevEx.Extensibility.HackathonApi.Services
 
                 var sw = Stopwatch.StartNew();
 
-
-                foreach (var cache in Sitecore.Caching.CacheManager.GetAllCaches())
-                {
-                    cache.Clear();
-                }
+                Sitecore.Caching.CacheManager.ClearAllCaches();
 
                 sw.Stop();
 
