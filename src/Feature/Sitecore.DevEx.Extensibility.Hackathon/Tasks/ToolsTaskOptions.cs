@@ -1,6 +1,6 @@
 ﻿using Sitecore.DevEx.Client.Tasks;
 
-namespace Sitecore.DevEx.Extensibility.Hachathon.Tasks
+namespace Sitecore.DevEx.Extensibility.Hackathon.Tasks
 {
     public class ToolsTaskOptions : TaskOptionsBase
     {

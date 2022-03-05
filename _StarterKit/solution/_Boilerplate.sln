@@ -30,9 +30,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Docker", "_Docker", "{7A26
 		docker\docker-compose.yml = docker\docker-compose.yml
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sitecore.DevEx.Extensibility.Hachathon", "Sitecore.DevEx.Extensibility.Hachathon", "{466B6014-2DFF-4403-A09F-54A4153CBC50}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sitecore.DevEx.Extensibility.Hackathon", "Sitecore.DevEx.Extensibility.Hackathon", "{466B6014-2DFF-4403-A09F-54A4153CBC50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.DevEx.Extensibility.Hachathon", "..\..\src\Feature\Sitecore.DevEx.Extensibility.Hachathon\Sitecore.DevEx.Extensibility.Hachathon.csproj", "{B1757F0D-6715-4304-A6BD-0EE69A425CA0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.DevEx.Extensibility.Hackathon", "..\..\src\Feature\Sitecore.DevEx.Extensibility.Hackathon\Sitecore.DevEx.Extensibility.Hackathon.csproj", "{B1757F0D-6715-4304-A6BD-0EE69A425CA0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

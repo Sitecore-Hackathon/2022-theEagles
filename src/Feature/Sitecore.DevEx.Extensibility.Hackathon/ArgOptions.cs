@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.CommandLine;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Sitecore.DevEx.Extensibility.Hachathon
+namespace Sitecore.DevEx.Extensibility.Hackathon
 {
     [ExcludeFromCodeCoverage]
     internal static class ArgOptions

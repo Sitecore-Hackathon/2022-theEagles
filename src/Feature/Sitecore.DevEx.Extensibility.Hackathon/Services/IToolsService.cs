@@ -1,10 +1,10 @@
 ﻿using Sitecore.DevEx.Configuration.Models;
-//using Sitecore.DevEx.Extensibility.Hachathon.Models;
+//using Sitecore.DevEx.Extensibility.Hackathon.Models;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Sitecore.DevEx.Extensibility.Hachathon.Services
+namespace Sitecore.DevEx.Extensibility.Hackathon.Services
 {
 
     public interface IToolsService

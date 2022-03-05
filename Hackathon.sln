@@ -30,7 +30,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Docker", "_Docker", "{7A26
 		docker\docker-compose.yml = docker\docker-compose.yml
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sitecore.DevEx.Extensibility.Hachathon", "src\Feature\Sitecore.DevEx.Extensibility.Hachathon\Sitecore.DevEx.Extensibility.Hachathon.csproj", "{3C33FE7B-2F72-4793-9309-F0D49E7D208C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sitecore.DevEx.Extensibility.Hackathon", "src\Feature\Sitecore.DevEx.Extensibility.Hackathon\Sitecore.DevEx.Extensibility.Hackathon.csproj", "{3C33FE7B-2F72-4793-9309-F0D49E7D208C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

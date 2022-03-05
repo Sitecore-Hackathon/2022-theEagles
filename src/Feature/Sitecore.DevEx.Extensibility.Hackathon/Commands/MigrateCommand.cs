@@ -2,12 +2,12 @@
 
 using Sitecore.Devex.Client.Cli.Extensibility.Subcommands;
 using Sitecore.DevEx.Client.Tasks;
-using Sitecore.DevEx.Extensibility.Hachathon.Tasks;
+using Sitecore.DevEx.Extensibility.Hackathon.Tasks;
 using System;
 using System.CommandLine;
 using System.Threading.Tasks;
 
-namespace Sitecore.DevEx.Extensibility.Hachathon.Commands
+namespace Sitecore.DevEx.Extensibility.Hackathon.Commands
 {
     public class MigrateCommand : SubcommandBase<ToolsTask, ToolsTaskOptions>
     {

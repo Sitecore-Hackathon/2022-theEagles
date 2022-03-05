@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Sitecore.DevEx.Extensibility.Hachathon.Services
+namespace Sitecore.DevEx.Extensibility.Hackathon.Services
 {
     public class ToolsService
     {

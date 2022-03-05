@@ -6,12 +6,12 @@ using System.Diagnostics.CodeAnalysis;
 using System;
 using System.Collections.Generic;
 using System.CommandLine;
-using Sitecore.DevEx.Extensibility.Hachathon.Commands;
+using Sitecore.DevEx.Extensibility.Hackathon.Commands;
 using Microsoft.Extensions.Logging;
-using Sitecore.DevEx.Extensibility.Hachathon.Tasks;
+using Sitecore.DevEx.Extensibility.Hackathon.Tasks;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
-namespace Sitecore.DevEx.Extensibility.Hachathon
+namespace Sitecore.DevEx.Extensibility.Hackathon
 {
     public class RegisterExtension : ISitecoreCliExtension
     {

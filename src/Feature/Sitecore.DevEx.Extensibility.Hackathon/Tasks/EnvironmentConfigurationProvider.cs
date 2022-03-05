@@ -5,7 +5,7 @@ using Sitecore.DevEx.Configuration;
 using Sitecore.DevEx.Configuration.Models;
 using System.Threading.Tasks;
 
-namespace Sitecore.DevEx.Extensibility.Hachathon.Tasks
+namespace Sitecore.DevEx.Extensibility.Hackathon.Tasks
 {
     public class EnvironmentConfigurationProvider : IEnvironmentConfigurationProvider
     {

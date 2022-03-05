@@ -3,14 +3,14 @@
 using Microsoft.Extensions.Logging;
 using Sitecore.DevEx.Client.Logging;
 using Sitecore.DevEx.Configuration.Models;
-using Sitecore.DevEx.Extensibility.Hachathon.Services;
+using Sitecore.DevEx.Extensibility.Hackathon.Services;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Sitecore.DevEx.Extensibility.Hachathon.Tasks
+namespace Sitecore.DevEx.Extensibility.Hackathon.Tasks
 {
     public class ToolsTask
     {

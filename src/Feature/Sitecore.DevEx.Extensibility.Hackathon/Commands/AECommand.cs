@@ -2,7 +2,7 @@
 using Sitecore.Devex.Client.Cli.Extensibility.Subcommands;
 using System.CommandLine;
 
-namespace Sitecore.DevEx.Extensibility.Hachathon.Commands
+namespace Sitecore.DevEx.Extensibility.Hackathon.Commands
 {
     public class AECommand : Command, ISubcommand
     {
