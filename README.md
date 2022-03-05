@@ -32,8 +32,9 @@ You can find a very good reference to Github flavoured markdown reference in [th
 ⟹ Does your module rely on other Sitecore modules or frameworks?
 
 - List any dependencies
-nuget - https://www.nuget.org/downloads - we used 6.0.0. add the path to the folder holding nuget.exe to the PATHS environemnt variable.
-Sitecore CLI module
+- nuget - https://www.nuget.org/downloads - we used 6.0.0. 
+- add the path to the folder holding nuget.exe to the PATHS environemnt variable.
+- Sitecore CLI module
 
 ## Installation instructions
 ⟹ Write a short clear step-wise instruction on how to install your module.  
