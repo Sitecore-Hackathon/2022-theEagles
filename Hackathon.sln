@@ -32,7 +32,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Docker", "_Docker", "{7A26
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sitecore.DevEx.Extensibility.Hackathon", "src\Feature\Sitecore.DevEx.Extensibility.Hackathon\Sitecore.DevEx.Extensibility.Hackathon.csproj", "{3C33FE7B-2F72-4793-9309-F0D49E7D208C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.DevEx.Extensibility.HackathonApi", "Sitecore.DevEx.Extensibility.HackathonApi\Sitecore.DevEx.Extensibility.HackathonApi.csproj", "{03B30894-4770-4018-BE75-109E7C2098A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sitecore.DevEx.Extensibility.HackathonApi", "src\Feature\Sitecore.DevEx.Extensibility.HackathonApi\Sitecore.DevEx.Extensibility.HackathonApi.csproj", "{E0C25E5D-4ACD-435C-AAC6-01096A2B0C70}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,17 +44,17 @@ Global
 		{3C33FE7B-2F72-4793-9309-F0D49E7D208C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C33FE7B-2F72-4793-9309-F0D49E7D208C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C33FE7B-2F72-4793-9309-F0D49E7D208C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{03B30894-4770-4018-BE75-109E7C2098A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{03B30894-4770-4018-BE75-109E7C2098A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{03B30894-4770-4018-BE75-109E7C2098A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{03B30894-4770-4018-BE75-109E7C2098A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0C25E5D-4ACD-435C-AAC6-01096A2B0C70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0C25E5D-4ACD-435C-AAC6-01096A2B0C70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0C25E5D-4ACD-435C-AAC6-01096A2B0C70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0C25E5D-4ACD-435C-AAC6-01096A2B0C70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3C33FE7B-2F72-4793-9309-F0D49E7D208C} = {17DD5718-6E13-4F2C-9738-B410396D4552}
-		{03B30894-4770-4018-BE75-109E7C2098A9} = {17DD5718-6E13-4F2C-9738-B410396D4552}
+		{E0C25E5D-4ACD-435C-AAC6-01096A2B0C70} = {17DD5718-6E13-4F2C-9738-B410396D4552}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {311DA37D-528B-43B2-A99B-E7253F841D46}
