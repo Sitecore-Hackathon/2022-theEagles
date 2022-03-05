@@ -1,9 +1,6 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
-using System.Diagnostics.CodeAnalysis;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.DependencyInjection.Extensions;
 using Sitecore.DependencyInjection;
 using Sitecore.DevEx.Extensibility.HackathonApi.Controllers;
 using Sitecore.DevEx.Extensibility.HackathonApi.Services;

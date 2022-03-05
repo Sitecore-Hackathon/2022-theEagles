@@ -31,9 +31,8 @@ You can find a very good reference to Github flavoured markdown reference in [th
 
 ⟹ Does your module rely on other Sitecore modules or frameworks?
 
-- List any dependencies
-- nuget - https://www.nuget.org/downloads - we used 6.0.0. 
-- add the path to the folder holding nuget.exe to the PATHS environemnt variable.
+- Nuget - https://www.nuget.org/downloads - we used 6.0.0
+- Add the path to the folder holding nuget.exe to the PATHS environemnt variable
 - Sitecore CLI module
 
 ## Installation instructions
@@ -46,16 +45,21 @@ You can find a very good reference to Github flavoured markdown reference in [th
 - Install CLI in the solution folder by following [these steps](https://doc.sitecore.com/xp/en/developers/101/developer-tools/install-sitecore-command-line-interface.html)
 - Log into Sitecore through CLI by following [these steps](https://doc.sitecore.com/xp/en/developers/101/developer-tools/log-in-to-a-sitecore-instance-with-sitecore-command-line-interface.html)
 - Build the solution
-- Manually copy the following dlls from where they are built into the inetpub bin folder of the website: `Sitecore.DevEx.Extensibility.HackathonApi.deps.json` `Sitecore.DevEx.Extensibility.HackathonApi.dll` `Sitecore.DevEx.Extensibility.HackathonApi.pdb``Sitecore.DevEx.Configuration.dll` `Sitecore.Devex.Client.Cli.Extensibility.dll` `Sitecore.DevEx.Client.dll` `Sitecore.DevEx.dll`
-- Open the output window and copy the path to the generated `Sitecore.DevEx.Extensibility.Hackathon.1.0.0.nupkg` file
+- Manually copy the following dlls from where they are built into the inetpub bin folder of the website: 
+  - `Sitecore.DevEx.Extensibility.HackathonApi.deps.json`
+  - `Sitecore.DevEx.Extensibility.HackathonApi.dll`
+  - `Sitecore.DevEx.Extensibility.HackathonApi.pdb`
+  - `Sitecore.DevEx.Configuration.dll`
+  - `Sitecore.Devex.Client.Cli.Extensibility.dll`
+  - `Sitecore.DevEx.Client.dll`
+  - `Sitecore.DevEx.dll`
+- Open the build output window in Visual Studio and copy the path to the generated `Sitecore.DevEx.Extensibility.Hackathon.1.0.0.nupkg` file
 - Create a folder for the local Nuget feed we are about to set up -- we are using `C:\schack\feed9`
-- Create a nuget feed by running `nuget add ""C:\Hackathon-2022\TheEagles\2022-theEagles\src\Feature\Sitecore.DevEx.Extensibility.Hackathon\bin\Debug\Sitecore.DevEx.Extensibility.Hackathon.1.0.0.nupkg"" -Source C:\schack\feed9` -- replace the first argument after the `add` command with the path that you exctracted from the output window
+- Create a nuget feed by running `nuget add "C:\Hackathon-2022\TheEagles\2022-theEagles\src\Feature\Sitecore.DevEx.Extensibility.Hackathon\bin\Debug\Sitecore.DevEx.Extensibility.Hackathon.1.0.0.nupkg" -Source C:\schack\feed9` -- replace the first argument after the `add` command with the path that you exctracted from the output window
 - Add the nuget feed to your Nuget sources by running `nuget sources Add -Name "anyNameWorks" -Source C:\schack\feed9`
-- Install the Plugin thru CLI -- make sure to CD into the solution folder and run `dotnet sitecore plugin add -n Sitecore.DevEx.Extensibility.Hackathon`
+- Install the Plugin thru CLI -- make sure to change directory into the solution folder and run `dotnet sitecore plugin add -n Sitecore.DevEx.Extensibility.Hackathon`
 
 ## Usage instructions
 While in the solution folder in powershell run `dotnet sitecore ae clear`
-
-Include screenshots where necessary. You can add images to the `./images` folder and then link to them from your documentation:
 
 ![Success](/images/1.png?raw=true "Success")
