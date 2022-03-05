@@ -17,7 +17,7 @@ namespace Sitecore.DevEx.Extensibility.Hackathon
     {
         public IEnumerable<ISubcommand> AddCommands(IServiceProvider container) => (IEnumerable<ISubcommand>)new ISubcommand[1]
        {
-             RegisterExtension.CreateIndexCommand(container)
+             RegisterExtension.CreateAECommand(container)
        };
 
         [ExcludeFromCodeCoverage]
@@ -28,22 +28,21 @@ namespace Sitecore.DevEx.Extensibility.Hackathon
         public void AddServices(IServiceCollection serviceCollection)
         {
             serviceCollection
-                .AddSingleton<MigrateCommand>()
-
+                .AddSingleton<CacheClearCommand>()
+                .AddSingleton<ToolsTask>()
                 .AddSingleton(sp => sp.GetService<ILoggerFactory>().CreateLogger<ToolsTask>());
             
             serviceCollection.TryAddTransient<IEnvironmentConfigurationProvider, EnvironmentConfigurationProvider>();
-                 }
+       }
 
-        private static ISubcommand CreateIndexCommand(IServiceProvider container)
+        private static ISubcommand CreateAECommand(IServiceProvider container)
         {
-            AECommand aeCommand = new AECommand("AE", "working with indexes data");
-            ((Symbol)aeCommand).AddAlias("AE");
+            AECommand aeCommand = new AECommand("ae", "misc tools for Sitecore CLI");
+            aeCommand.AddAlias("ae");
 
-            aeCommand.AddCommand((Command)container.GetRequiredService<MigrateCommand>());
-            aeCommand.AddCommand((Command)container.GetRequiredService<AECommand>());
+            aeCommand.AddCommand((Command)container.GetRequiredService<CacheClearCommand>());
  
-            return (ISubcommand)aeCommand;
+            return aeCommand;
         }
     }
 }

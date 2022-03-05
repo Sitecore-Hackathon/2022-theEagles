@@ -8,7 +8,7 @@ namespace Sitecore.DevEx.Extensibility.Hackathon
     [ExcludeFromCodeCoverage]
     internal static class ArgOptions
     {
-        internal static readonly Option Config = new Option(new string[2]
+        internal static readonly Option Config = new Option(new string[]
         {
       "--config",
       "-c"
@@ -16,15 +16,8 @@ namespace Sitecore.DevEx.Extensibility.Hackathon
         {
             Argument = (Argument)new Argument<string>((Func<string>)(() => Environment.CurrentDirectory))
         };
-        internal static readonly Option Indexes = new Option(new string[2]
-        {
-      "--indexes",
-      "-i"
-        }, "Populates provided index names")
-        {
-            Argument = (Argument)new Argument<List<string>>((Func<List<string>>)(() => new List<string>()))
-        };
-        internal static readonly Option EnvironmentName = new Option(new string[2]
+       
+        internal static readonly Option EnvironmentName = new Option(new string[]
         {
       "--environment-name",
       "-n"
@@ -32,7 +25,8 @@ namespace Sitecore.DevEx.Extensibility.Hackathon
         {
             Argument = (Argument)new Argument<string>()
         };
-        internal static readonly Option Verbose = new Option(new string[2]
+
+        internal static readonly Option Verbose = new Option(new string[]
         {
       "--verbose",
       "-v"
@@ -40,7 +34,8 @@ namespace Sitecore.DevEx.Extensibility.Hackathon
         {
             Argument = (Argument)new Argument<bool>((Func<bool>)(() => false))
         };
-        internal static readonly Option Trace = new Option(new string[2]
+
+        internal static readonly Option Trace = new Option(new string[]
         {
       "--trace",
       "-t"
@@ -48,5 +43,7 @@ namespace Sitecore.DevEx.Extensibility.Hackathon
         {
             Argument = (Argument)new Argument<bool>((Func<bool>)(() => false))
         };
+
+        internal static readonly Option<bool> ClearCache = new Option<bool>(new[] { "--clearcache", "--cc" }, () => false, "clear sitecore cache.");
     }
 }

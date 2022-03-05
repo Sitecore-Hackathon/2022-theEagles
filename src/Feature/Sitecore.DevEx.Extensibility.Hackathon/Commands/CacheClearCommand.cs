@@ -9,14 +9,15 @@ using System.Threading.Tasks;
 
 namespace Sitecore.DevEx.Extensibility.Hackathon.Commands
 {
-    public class MigrateCommand : SubcommandBase<ToolsTask, ToolsTaskOptions>
+    public class CacheClearCommand : SubcommandBase<ToolsTask, ToolsTaskOptions>
     {
-        public MigrateCommand(IServiceProvider container)
-          : base("migrate", "Do Something", container)
+        public CacheClearCommand(IServiceProvider container)
+          : base("clear", "clear the cache", container)
         {
-            ((Command)this).AddOption(ArgOptions.EnvironmentName);
-            ((Command)this).AddOption(ArgOptions.Config);
-            ((Command)this).AddOption(ArgOptions.Trace);
+            AddOption(ArgOptions.EnvironmentName);
+            AddOption(ArgOptions.Config);
+            AddOption(ArgOptions.Trace);
+            AddOption(ArgOptions.ClearCache);
         }
 
         protected override async Task<int> Handle(ToolsTask task, ToolsTaskOptions args)
