@@ -31,7 +31,13 @@ namespace Sitecore.DevEx.Extensibility.HackathonApi.Services
                
 
                 var sw = Stopwatch.StartNew();
-                //_cache.ClearCache();
+
+
+                foreach (var cache in Sitecore.Caching.CacheManager.GetAllCaches())
+                {
+                    cache.Clear();
+                }
+
                 sw.Stop();
 
                 scope.Chain(OperationResult.FromInfoSuccess(HackathonEventIds.ClearCache, "[Hackathon] Cache cleared successfully"));

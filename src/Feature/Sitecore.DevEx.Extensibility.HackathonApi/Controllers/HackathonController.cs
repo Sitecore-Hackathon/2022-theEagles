@@ -10,20 +10,20 @@ namespace Sitecore.DevEx.Extensibility.HackathonApi.Controllers
     [ExcludeFromCodeCoverage]
     public class HackathonController : ApiController
     {
-        private readonly IHackathonApiService _cacheService;
+        private readonly IHackathonApiService _apiService;
 
-        public HackathonController(IHackathonApiService cacheService)
+        public HackathonController(IHackathonApiService apiService)
         {
-            _cacheService = cacheService;
+            _apiService = apiService;
         }
 
  
 
         [HttpPost]
-        [Route("global")]
+        //[Route("all")]
         public IHttpActionResult ClearCache()
         {
-            var result = "";// _cacheService.ClearAll();
+            var result = _apiService.ClearCache();
             return Json(result);
         }
     }
